@@ -1,1 +1,1 @@
-workeur: python osiris.py
+worker: python osiris.py
