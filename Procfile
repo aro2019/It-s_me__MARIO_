@@ -1,0 +1,1 @@
+workeur: python osiris.py
