@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='!')
+client = discord.Client()
 
 @bot.event
 async def on_ready():
@@ -56,4 +57,5 @@ async def help(ctx):
 
     await ctx.send(embed=embed)
 
-bot.run(str(os.environ.get('NTkzNDQ5MTQyNzc3NDEzNjM3.XRODsQ.GricAAMV4olLUPUz2F3di6iYE54')))
+client.run('NTkzNDQ5MTQyNzc3NDEzNjM3.XRODsQ.GricAAMV4olLUPUz2F3di6iYE54')
+# syntaxe ou j ai des doutes mais a voir
