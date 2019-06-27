@@ -31,15 +31,11 @@ async def info(ctx):
 
 @bot.command()
 async def help(ctx):
-    if id=ctx.author == '593132672205848655' or '593132485060067328':
-        embed = discord.Embed()
+    embed = discord.Embed()
 
-        embed.add_field(name="!info", value="Gives a little info about the bot", inline=False)
-        embed.add_field(name="!help", value="Gives this message", inline=False)
+    embed.add_field(name="!info", value="Gives a little info about the bot", inline=False)
+    embed.add_field(name="!help", value="Gives this message", inline=False)
 
-        await ctx.send(embed=embed)
-    else:
-        ctx.send("ce n est pas bien tu n as pas les droits")
-        pass
+    await ctx.send(embed=embed)
 
 bot.run('NTkzNDQ5MTQyNzc3NDEzNjM3.XRODsQ.GricAAMV4olLUPUz2F3di6iYE54')
