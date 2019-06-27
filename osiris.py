@@ -10,51 +10,36 @@ async def on_ready():
     print(bot.user.id)
     print('-----------------------')
 
-@bot.command()
-async def add(ctx, a: int, b: int):
-    await ctx.send(a+b)
-
-@bot.command()
-async def multiply(ctx, a: int, b: int):
-    await ctx.send(a*b)
-
-@bot.command()
-async def greet(ctx):
-    await ctx.send(":smiley: :wave: Hello, there!")
-
-@bot.command()
-async def cat(ctx):
-    await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
+bot.remove_command('help')
 
 @bot.command()
 async def info(ctx):
     embed = discord.Embed(title="osiris", description="bot du conseil", color=0xeee657)
 
     # give info about you here
-    embed.add_field(name="Author", value="aro20")
+    embed.add_field(name="dévellopeur", value="aro20")
 
     # Shows the number of servers the bot is member of.
-    embed.add_field(name="Server count", value=f"{len(bot.guilds)}")
+    embed.add_field(name="serveur connecté avec osiris", value=f"{len(bot.guilds)}")
 
     # give users a link to invite thsi bot to their server
     embed.add_field(name="Invite", value="non")
 
-    await ctx.send(embed=embed)
+    embed.add_field(name="droits", value="administrateur")
 
-bot.remove_command('help')
+    await ctx.send(embed=embed)
 
 @bot.command()
 async def help(ctx):
-    embed = discord.Embed()
+    if id=ctx.author == '593132672205848655' or '593132485060067328':
+        embed = discord.Embed()
 
-    embed.add_field(name="!add X Y", value="Gives the addition of **X** and **Y**", inline=False)
-    embed.add_field(name="!multiply X Y", value="Gives the multiplication of **X** and **Y**", inline=False)
-    embed.add_field(name="!greet", value="Gives a nice greet message", inline=False)
-    embed.add_field(name="!cat", value="Gives a cute cat gif to lighten up the mood.", inline=False)
-    embed.add_field(name="!info", value="Gives a little info about the bot", inline=False)
-    embed.add_field(name="!help", value="Gives this message", inline=False)
+        embed.add_field(name="!info", value="Gives a little info about the bot", inline=False)
+        embed.add_field(name="!help", value="Gives this message", inline=False)
 
-    await ctx.send(embed=embed)
+        await ctx.send(embed=embed)
+    else:
+        ctx.send("ce n est pas bien tu n as pas les droits")
+        pass
 
 bot.run('NTkzNDQ5MTQyNzc3NDEzNjM3.XRODsQ.GricAAMV4olLUPUz2F3di6iYE54')
-# syntaxe ou j ai des doutes mais a voir 
