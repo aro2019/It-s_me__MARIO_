@@ -41,4 +41,4 @@ async def help(ctx): # faire que seul les rangs 4 et le chef y accede
 
     await ctx.send(embed=embed)
 
-bot.run(os.environ.get(str(token)))
+bot.run("NTkzNDQ5MTQyNzc3NDEzNjM3.XRXRKQ.beZQO8iVlxKT7WzkEs7SWBZgA9g")
