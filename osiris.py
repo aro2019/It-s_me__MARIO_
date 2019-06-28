@@ -28,6 +28,10 @@ async def info(ctx):
     embed.add_field(name="droits", value="administrateur")
 
     await ctx.send(embed=embed)
+    
+@bot.command()
+async def test(ctx):
+    print str(role[0])
 
 @bot.command()
 async def help(ctx):
