@@ -31,7 +31,7 @@ async def info(ctx):
     
 @bot.command()
 async def test(ctx):
-    print str(role[0])
+    await ctx.send(str(role[0]))
 
 @bot.command()
 async def help(ctx):
