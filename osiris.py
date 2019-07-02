@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='!')
+b_token = os.environ.get('token') 
 
 @bot.event
 async def on_ready():
@@ -39,4 +40,4 @@ async def help(ctx): # faire que seul les rangs 4 et le chef y accede
 
     await ctx.send(embed=embed)
 
-bot.run(os.environ.get('token'))
+bot.run(b_token)
