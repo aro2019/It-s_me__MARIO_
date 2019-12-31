@@ -1,1 +1,1 @@
-worker: python osiris.py
+worker: python It's_me_!_MARIO!.py
