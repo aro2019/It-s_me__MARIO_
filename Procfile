@@ -1,1 +1,1 @@
-worker: python It's_me_!_MARIO_!.py
+worker: python it_s_me_MARIO.py
