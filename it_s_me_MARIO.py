@@ -21,15 +21,15 @@ bot.remove_command('help')
 @bot.command()
 async def info(ctx):
 
-    embed = discord.Embed(title="osiris", description="bot du conseil", color=0xeee657)
+    embed = discord.Embed(title="it_s_me_MARIO", description="bot du conseil", color=0xeee657)
 
     # give info about you here
 
-    embed.add_field(name="dévellopeur", value="aro20")
+    embed.add_field(name="dévellopeur", value="aro20 / A N U B I S 20")
 
     # Shows the number of servers the bot is member of.
 
-    embed.add_field(name="serveur connecté avec osiris", value=f"{len(bot.guilds)}")
+    embed.add_field(name="serveur connecté avec it_s_me_MARIO", value=f"{len(bot.guilds)}")
 
     # give users a link to invite thsi bot to their server
 
